@@ -1,11 +1,19 @@
 fastapi
 uvicorn
-numpy
-opencv-python-headless
-dlib-bin
-face_recognition
 pymongo
 python-dotenv
-pillow
-dnspython
+opencv-python-headless
+face-recognition
+dlib-bin
+
+# fastapi
+# uvicorn
+# numpy
+# opencv-python-headless
+# dlib-bin
+# face_recognition
+# pymongo
+# python-dotenv
+# pillow
+# dnspython
 # dlib
