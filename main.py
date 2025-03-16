@@ -18,10 +18,7 @@ IMAGE_FOLDER = "face_data"
 os.makedirs(IMAGE_FOLDER, exist_ok=True)
 
 # เชื่อมต่อ MongoDB Atlas
-MONGO_URI = os.getenv("MONGO_URI")
-if not MONGO_URI:
-    raise ValueError("mongodb+srv://admin:1234@cluster0.pbv9t.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-
+MONGO_URI = os.getenv("MONGO_URI", "mongodb+srv://admin:1234@cluster0.pbv9t.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 client = MongoClient(MONGO_URI)
 db = client["face_recognition"]
 collection = db["registered_faces"]
@@ -104,4 +101,4 @@ def scan_history():
         raise HTTPException(status_code=500, detail=str(e))
 
 if __name__ == "__main__":
-    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
+    uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True)

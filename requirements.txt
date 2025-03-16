@@ -1,7 +1,10 @@
 fastapi
 uvicorn
+numpy
+opencv-python
+dlib
+face_recognition
 pymongo
 python-dotenv
-opencv-python-headless
-face-recognition
-dlib-bin  # ใช้เวอร์ชันที่ติดตั้งได้ง่ายกว่า
+pillow
+dnspython
