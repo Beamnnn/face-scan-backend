@@ -23,8 +23,7 @@ WORKDIR /app
 
 COPY main.py requirements.txt database.py face_data/ /app/
 
-# ติดตั้ง dlib และ dependencies
-RUN pip install --no-cache-dir cmake dlib
+# ลบการติดตั้ง dlib ออก และติดตั้ง requirements.txt ใหม่
 RUN pip install --no-cache-dir -r requirements.txt
 
 # รัน FastAPI ผ่าน Uvicorn
