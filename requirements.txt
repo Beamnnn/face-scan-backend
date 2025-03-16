@@ -4,6 +4,4 @@ pymongo
 python-dotenv
 opencv-python-headless
 face-recognition
-dlib-bin
-python-multipart
-dlib
+dlib-bin  # ใช้เวอร์ชันที่ติดตั้งได้ง่ายกว่า

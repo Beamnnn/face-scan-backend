@@ -21,10 +21,10 @@ ENV PIP_NO_CACHE_DIR=1 \
 # กำหนดโฟลเดอร์ทำงาน
 WORKDIR /app
 
-COPY main.py requirements.txt database.py face_data/ /app/
+COPY main.py requirements.txt database.py /app/
 
 # ติดตั้ง dlib และ dependencies
-RUN pip install --no-cache-dir cmake dlib
+RUN pip install --no-cache-dir cmake dlib-bin
 RUN pip install --no-cache-dir -r requirements.txt
 
 # รัน FastAPI ผ่าน Uvicorn
