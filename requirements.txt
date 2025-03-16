@@ -2,7 +2,7 @@ fastapi
 uvicorn
 numpy
 opencv-python
-dlib==19.24.0
+dlib-bin
 face_recognition
 pymongo
 python-dotenv
