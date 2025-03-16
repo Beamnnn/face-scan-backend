@@ -6,6 +6,7 @@ opencv-python-headless
 face-recognition
 dlib-bin
 
+
 # fastapi
 # uvicorn
 # numpy
@@ -16,4 +17,3 @@ dlib-bin
 # python-dotenv
 # pillow
 # dnspython
-# dlib
