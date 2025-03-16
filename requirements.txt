@@ -6,3 +6,4 @@ opencv-python-headless
 face-recognition
 dlib-bin
 python-multipart
+dlib
