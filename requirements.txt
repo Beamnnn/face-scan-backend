@@ -2,7 +2,7 @@ fastapi
 uvicorn
 numpy
 opencv-python
-dlib
+dlib-bin  # ใช้เวอร์ชัน pre-built ของ dlib
 face_recognition
 pymongo
 python-dotenv
